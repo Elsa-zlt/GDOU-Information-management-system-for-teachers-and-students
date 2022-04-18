@@ -1,0 +1,18 @@
+<!--pages/S_stuindex/S_stuindex.wxml-->
+<van-row>
+    <van-col span="18" offset="3">
+      <button bindtap="toChcStuInfo">查看学生个人信息</button>
+    </van-col>
+    <van-col span="18" offset="3">
+      <button bindtap="toChaStuPsw">重新设置学生登录密码</button>
+    </van-col>
+    <van-col span="18" offset="3">
+      <button bindtap="toSelectCourse">学生选课操作</button>
+    </van-col>
+    <van-col span="18" offset="3">
+      <button bindtap="toRetreatCourse">学生课程退选操作</button>
+    </van-col>
+    <van-col span="18" offset="3">
+      <button bindtap="toChcCourseInfo">查看学生成绩信息</button>
+    </van-col>
+</van-row>

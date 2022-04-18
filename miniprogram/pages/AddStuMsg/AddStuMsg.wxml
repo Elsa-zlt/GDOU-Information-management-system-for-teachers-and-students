@@ -1,0 +1,100 @@
+<!--pages/AddStuMsg/AddStuMsg.wxml-->
+<form bindsubmit="onSubmit">
+  <!-- 姓名添加 -->
+  <van-row>
+    <van-col span="6">
+      <label>姓名</label>
+    </van-col>
+    <van-col span="18">
+      <input name="name" placeholder="请输入学生姓名" value="{{info.name}}"></input>
+    </van-col>
+  </van-row>
+
+  <!-- 性别添加 -->
+  <van-row>
+    <van-col span="6">
+      <label>性别</label>
+    </van-col>
+    <van-col span="18">
+      <radio-group name="gender">
+        <radio color="#DE6E6D" value="3" checked="{{info.gender==3}}"/>男
+        <radio color="#DE6E6D" value="4" checked="{{info.gender==4}}"/>女
+      </radio-group>
+    </van-col>
+  </van-row>
+
+  <!-- 学号添加 -->
+  <van-row>
+    <van-col span="6">
+      <label>学号</label>
+    </van-col>
+    <van-col span="18">
+      <input name="SID" placeholder="请输入学号" value="{{info.SID}}"></input>
+    </van-col>
+  </van-row>
+
+  <!-- 学院添加 -->
+  <van-row>
+    <van-col span="6">
+      <label>学院</label>
+    </van-col>
+    <van-col span="18">
+      <input name="academy" placeholder="请输入学院名称" value="{{info.academy}}"></input>
+    </van-col>
+  </van-row>
+
+  <!-- 专业添加 -->
+  <van-row>
+    <van-col span="6">
+      <label>专业</label>
+    </van-col>
+    <van-col span="18">
+      <input name="major" placeholder="请输入专业名称" value="{{info.major}}"></input>
+    </van-col>
+  </van-row>
+
+  <!-- 班级添加 -->
+  <van-row>
+    <van-col span="6">
+      <label>班级</label>
+    </van-col>
+    <van-col span="18">
+      <input name="class" placeholder="请输入班级名称" value="{{info.class}}"></input>
+    </van-col>
+  </van-row>
+
+  <!-- 入学年份添加 -->
+  <van-row>
+    <van-col span="6">
+      <label>入学年份</label>
+    </van-col>
+    <van-col span="18">
+      <input name="time" placeholder="请输入入学年份" value="{{info.time}}"></input>
+    </van-col>
+  </van-row>
+
+  <!-- 登录密码添加 -->
+  <van-row>
+    <van-col span="6">
+      <label>登录密码</label>
+    </van-col>
+    <van-col span="18">
+      <input name="SPasW" placeholder="请输入登录密码" value="{{info.SPasW}}"></input>
+    </van-col>
+  </van-row>
+
+
+  <!-- 第六行 -->
+  <van-row>
+    <view>
+    <van-col span="21" offset="1.5">
+      <button form-type="submit">保存学生信息</button>
+    </van-col>
+  </view>
+    <van-col span="18" offset="3">
+      <button bindtap="cancelEdit">取消修改</button>
+    </van-col>
+  </van-row>
+
+
+</form>

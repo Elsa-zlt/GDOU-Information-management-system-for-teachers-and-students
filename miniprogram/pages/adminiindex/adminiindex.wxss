@@ -1,0 +1,7 @@
+/* pages/adminiindex/adminiindex.wxss */
+/* 按钮特效 */
+button{
+  margin: 20rpx;
+  color: white;
+  background-color: #DE6E6D;
+}

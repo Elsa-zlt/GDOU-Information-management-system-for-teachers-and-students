@@ -1,0 +1,77 @@
+<!--pages/ChaCourseInfo/ChaCourseInfo.wxml-->
+<form bindsubmit="onSubmit">
+  <!-- 课程名 -->
+  <van-row>
+    <van-col span="6">
+      <label>课程名</label>
+    </van-col>
+    <van-col span="18">
+      <view>{{courseinfo.coursename}}</view>
+    </van-col>
+  </van-row>
+
+  <!-- 学分 -->
+  <van-row>
+    <van-col span="6">
+      <label>学分</label>
+    </van-col>
+    <van-col span="18">
+      <input name="credit" placeholder="请输入学分" value="{{courseinfo.credit}}"></input>
+    </van-col>
+  </van-row>
+
+  <!-- 学时 -->
+  <van-row>
+    <van-col span="6">
+      <label>学时</label>
+    </van-col>
+    <van-col span="18">
+      <input name="hour" placeholder="请输入学时" value="{{courseinfo.hour}}"></input>
+    </van-col>
+  </van-row>
+
+  <!-- 教师1 -->
+  <van-row>
+    <van-col span="6">
+      <label>教师1</label>
+    </van-col>
+    <van-col span="18">
+      <view>{{courseinfo.teachers[0]}}</view>
+    </van-col>
+  </van-row>
+
+  <!-- 教师2 -->
+  <van-row>
+    <van-col span="6">
+      <label>教师2</label>
+    </van-col>
+    <van-col span="18">
+      <view>{{courseinfo.teachers[1]}}</view>
+    </van-col>
+  </van-row>
+
+  <!-- 教师3 -->
+  <van-row>
+    <van-col span="6">
+      <label>教师3</label>
+    </van-col>
+    <van-col span="18">
+      <view>{{courseinfo.teachers[2]}}</view>
+    </van-col>
+  </van-row>
+
+
+  <!-- 第六行 -->
+  <van-row>
+    <view>
+    <van-col span="21" offset="1.5">
+      <button form-type="submit">保存选课信息</button>
+    </van-col>
+  </view>
+    <van-col span="18" offset="3">
+      <button bindtap="cancelEdit">取消修改</button>
+    </van-col>
+  </van-row>
+
+
+</form>

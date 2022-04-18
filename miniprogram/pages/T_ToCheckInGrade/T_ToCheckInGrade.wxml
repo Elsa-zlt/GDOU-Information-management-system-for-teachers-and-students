@@ -1,0 +1,65 @@
+<!--pages/T_ToCheckInGrade/T_ToCheckInGrade.wxml-->
+<form bindsubmit="onSubmit">
+  <van-row>
+    <van-col offset="6" span="12">登记学生成绩</van-col>
+  </van-row>
+
+  <van-row>
+    <van-col span="6">
+      <label>学生姓名</label>
+    </van-col>
+    <van-col span="18">
+      <van-cell title="{{stuname}}" value=" " />
+    </van-col>
+  </van-row>
+
+  <!-- 学/教工号文字框 -->
+  <van-row>
+    <van-col span="6">
+      <label>课程名</label>
+    </van-col>
+    <van-col span="18">
+      <van-cell title="{{coursename}}" value=" " />
+    </van-col>
+  </van-row>
+
+  
+
+  <!-- 学/教工号文字框 -->
+  <van-row>
+    <van-col span="6">
+      <label>教师</label>
+    </van-col>
+    <van-col span="18">
+      <van-cell title="{{teacher}}" value=" " />
+    </van-col>
+  </van-row>
+
+
+  <!-- 学/教工号文字框 -->
+  <van-row>
+    <van-col span="6">
+      <label>成绩</label>
+    </van-col>
+    <van-col span="18">
+      <input name="grade"  placeholder="请输入该学生成绩"></input>
+    </van-col>
+  </van-row>
+
+  <van-row>
+    <van-col span="24">
+      <label>目前第{{index}}个学生，一共{{stuslen}}个学生</label>
+    </van-col>
+  </van-row>
+
+  <van-row>
+    <van-col span="18" offset="3">
+      <button form-type="submit">登记成绩</button>
+    </van-col>
+    <van-col span="18" offset="3">
+      <button bindtap="cancelEdit">取消修改</button>
+    </van-col>
+  </van-row>
+
+
+</form>

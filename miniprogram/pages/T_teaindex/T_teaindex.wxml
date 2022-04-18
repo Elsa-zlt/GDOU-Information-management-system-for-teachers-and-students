@@ -1,0 +1,17 @@
+<!--pages/T_teaindex/T_teaindex.wxml-->
+<van-row>
+    <van-col span="18" offset="3">
+      <button bindtap="toChcTeaInfo">查看教师个人信息</button>
+    </van-col>
+    <van-col span="18" offset="3">
+      <button bindtap="toChaTeaPsw">重新设置学生登录密码</button>
+    </van-col>
+    <van-col span="18" offset="3">
+      <button bindtap="toChcTeaCourseInfo">查看教师所教课程信息</button>
+    </van-col>
+    <van-col span="18" offset="3">
+      <button bindtap="toCheckInGradeInfo">登记成绩信息</button>
+    </van-col>
+    
+    
+</van-row>

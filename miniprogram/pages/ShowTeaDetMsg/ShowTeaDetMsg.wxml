@@ -1,0 +1,16 @@
+<!--pages/ShowTeaDetMsg/ShowTeaDetMsg.wxml-->
+<!-- 顶部头像和昵称 -->
+<view class="avatarBox">
+  <image src="/images/avatar/00{{info.gender}}.jpg"></image>
+  <view>{{info.name}}</view>
+</view>
+<van-cell-group>
+  <van-cell title="性别" value="{{info.gender == 1 ? '男' :'女'}}" />
+  <van-cell title="学院" value="{{info.academy}}" />
+  <van-cell title="教工号" value="{{info.TID}}" />
+  <van-cell title="登录密码" value="{{info.TPasW}}" />
+</van-cell-group>
+
+<!-- 按钮区域 -->
+<van-button block type="warning" bindtap="editTeacher">修改</van-button>
+<van-button block type="danger" bindtap="deleteTeacher">删除</van-button>

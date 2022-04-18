@@ -1,0 +1,6 @@
+/* pages/T_teaindex/T_teaindex.wxss */
+button{
+  margin: 20rpx;
+  color: white;
+  background-color: #DE6E6D;
+}

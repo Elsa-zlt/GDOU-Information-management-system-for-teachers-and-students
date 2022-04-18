@@ -1,0 +1,6 @@
+/* pages/S_stuindex/S_stuindex.wxss */
+button{
+  margin: 20rpx;
+  color: white;
+  background-color: #DE6E6D;
+}

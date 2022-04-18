@@ -1,0 +1,16 @@
+/* pages/T_CheckInGradeInfo/T_CheckInGradeInfo.wxss */
+view{
+  /* 颜色 */
+  color: #DE6E6D;
+}
+
+van-cell{
+  /* 颜色 */
+  color: #DE6E6D;
+}
+
+button{
+  margin: 20rpx;
+  color: white;
+  background-color: #DE6E6D;
+}

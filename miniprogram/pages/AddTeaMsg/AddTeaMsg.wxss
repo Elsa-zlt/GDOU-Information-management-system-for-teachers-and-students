@@ -1,0 +1,50 @@
+/* pages/AddTeaMsg/AddTeaMsg.wxss */
+/* 行布局 */
+van-row{
+  /* 上下左右的距离 */
+  margin:20rpx 20rpx;
+  /* 文本居中显示 */
+  text-align:center;
+  color: #DE6E6D;
+}
+
+/* 文本标签 */
+label{
+  /* 上下左右距离 */
+  padding: 10rpx;
+  color: #DE6E6D;
+  line-height: 80rpx;
+}
+
+/* 文本输入框 */
+input{
+  border:1rpx solid #DE6E6D;
+  width: 480rpx;
+  height: 80rpx;
+  /* 数值越大，圆弧的弧度越大 */
+  border-radius: 20rpx;
+}
+
+/* 单选框组 */
+radio-group{
+  width: 480rpx;
+  line-height: 80rpx;
+}
+
+/* 单选框 */
+radio{
+  margin: 0  20rpx;
+}
+
+/* 日期选择器 */
+picker view{
+  width: 480rpx;
+  line-height: 80rpx;
+}
+
+/* 按钮特效 */
+button{
+  margin: 20rpx;
+  color: white;
+  background-color: #DE6E6D;
+}

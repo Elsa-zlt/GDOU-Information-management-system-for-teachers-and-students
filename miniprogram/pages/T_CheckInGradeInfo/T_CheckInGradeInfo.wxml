@@ -1,0 +1,18 @@
+<!--pages/T_CheckInGradeInfo/T_CheckInGradeInfo.wxml-->
+<van-cell title="{{name}}教师所教课程信息如下"  />
+<van-cell  value="                    " />
+
+<block wx:for='{{CourseInfo}}' wx:key='{{item.coursename}}'>
+  
+  <van-cell-group>
+  <van-cell title="课程名称" value="{{item.coursename}}" />
+  <van-cell title="教师" value="{{item.teacher}}" />
+  <van-cell title="该课程-教师对应学生人数" value="{{item.StuGradeInfo.length}}" />
+  <button size="small" data-index="{{item}}" bindtap="toCheckInGradeInfo">登记成绩</button>
+  <van-cell  value="                    " />
+  
+</van-cell-group>
+
+</block>
+
+<button size="small"  bindtap="toReturnIndex">返回教师主页</button>

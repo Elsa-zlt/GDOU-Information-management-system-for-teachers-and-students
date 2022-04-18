@@ -1,0 +1,17 @@
+<!--pages/T_ShowTeaCourseInfo/T_ShowTeaCourseInfo.wxml-->
+<van-cell title="{{name}}教师所教课程信息如下"  />
+<van-cell  value="                    " />
+
+<block wx:for='{{CourseInfo}}' wx:key='{{item.coursename}}'>
+  
+  <van-cell-group>
+  <van-cell title="课程名称" value="{{item.coursename}}" />
+  <van-cell title="学分" value="{{item.credit}}" />
+  <van-cell title="学时" value="{{item.hour}}" />
+  <van-cell  value="                    " />
+  
+</van-cell-group>
+
+</block>
+
+<button size="small"  bindtap="toReturnIndex">返回教师主页</button>

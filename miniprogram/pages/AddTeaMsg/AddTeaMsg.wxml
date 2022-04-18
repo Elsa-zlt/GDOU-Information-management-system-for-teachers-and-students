@@ -1,0 +1,70 @@
+<!--pages/AddTeaMsg/AddTeaMsg.wxml-->
+<form bindsubmit="onSubmit">
+  <!-- 姓名添加 -->
+  <van-row>
+    <van-col span="6">
+      <label>姓名</label>
+    </van-col>
+    <van-col span="18">
+      <input name="name" placeholder="请输入教师姓名" value="{{info.name}}"></input>
+    </van-col>
+  </van-row>
+
+  <!-- 性别添加 -->
+  <van-row>
+    <van-col span="6">
+      <label>性别</label>
+    </van-col>
+    <van-col span="18">
+      <radio-group name="gender">
+        <radio color="#DE6E6D" value="1" checked="{{info.gender==1}}"/>男
+        <radio color="#DE6E6D" value="2" checked="{{info.gender==2}}"/>女
+      </radio-group>
+    </van-col>
+  </van-row>
+
+  <!-- 教工号添加 -->
+  <van-row>
+    <van-col span="6">
+      <label>教工号</label>
+    </van-col>
+    <van-col span="18">
+      <input name="TID" placeholder="请输入教工号" value="{{info.TID}}"></input>
+    </van-col>
+  </van-row>
+
+  <!-- 学院添加 -->
+  <van-row>
+    <van-col span="6">
+      <label>学院</label>
+    </van-col>
+    <van-col span="18">
+      <input name="academy" placeholder="请输入学院名称" value="{{info.academy}}"></input>
+    </van-col>
+  </van-row>
+
+  <!-- 登录密码添加 -->
+  <van-row>
+    <van-col span="6">
+      <label>登录密码</label>
+    </van-col>
+    <van-col span="18">
+      <input name="TPasW" placeholder="请输入登录密码" value="{{info.TPasW}}"></input>
+    </van-col>
+  </van-row>
+
+
+  <!-- 第六行 -->
+  <van-row>
+    <view>
+    <van-col span="21" offset="1.5">
+      <button form-type="submit">保存教师信息</button>
+    </van-col>
+  </view>
+    <van-col span="18" offset="3">
+      <button bindtap="cancelEdit">取消修改</button>
+    </van-col>
+  </van-row>
+
+
+</form>

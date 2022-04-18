@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/adminiindex/adminiindex",
+    "pages/adminichalog/adminichalog",
+    "pages/ChaAdminiPsw/ChaAdminiPsw",
+    "pages/AddTeaMsg/AddTeaMsg",
+    "pages/ShowTeaMsg/ShowTeaMsg",
+    "pages/ShowTeaDetMsg/ShowTeaDetMsg",
+    "pages/AddStuMsg/AddStuMsg",
+    "pages/ShowStuMsg/ShowStuMsg",
+    "pages/ShowStuDetMsg/ShowStuDetMsg",
+    "pages/CourseSelectOper/CourseSelectOper",
+    "pages/ShowCourseInfo/ShowCourseInfo",
+    "pages/ChaCourseInfo/ChaCourseInfo",
+    "pages/S_stuindex/S_stuindex",
+    "pages/S_ShowStuInfo/S_ShowStuInfo",
+    "pages/S_ChaStuPsw/S_ChaStuPsw",
+    "pages/S_SelectCourses/S_SelectCourses",
+    "pages/S_RetreatCourses/S_RetreatCourses",
+    "pages/S_ShowCourseInfo/S_ShowCourseInfo",
+    "pages/T_teaindex/T_teaindex",
+    "pages/T_ShowTeaInfo/T_ShowTeaInfo",
+    "pages/T_ChaTeaPsw/T_ChaTeaPsw",
+    "pages/T_ShowTeaCourseInfo/T_ShowTeaCourseInfo",
+    "pages/T_CheckInGradeInfo/T_CheckInGradeInfo",
+    "pages/T_ToCheckInGrade/T_ToCheckInGrade"
+    
+    
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#DE6E6D",
+    "navigationBarTitleText": "师生信息管理系统"
+  },
+  "sitemapLocation": "sitemap.json"
+}

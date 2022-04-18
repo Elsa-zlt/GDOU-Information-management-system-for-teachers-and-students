@@ -1,0 +1,14 @@
+<!--pages/S_RetreatCourses/S_RetreatCourses.wxml-->
+<button size="small"  bindtap="toReturnIndex">返回学生主页</button>
+<block wx:for='{{coursesinfo}}' wx:key='{{item.coursename}}'>
+  <van-panel class="title" title="{{item.coursename}}" desc="该课程信息如下" use-footer-slot>
+  <view>教师：{{item.teacher}}</view>
+  <view>学分：{{item.credit}}</view>
+  <view>学时：{{item.hour}}</view>
+  <view>成绩：{{item.grade}}</view>
+  
+  <view slot="footer">
+    <button size="small" data-index="{{item}}" bindtap="toRetreatCourses">退选课程</button>
+  </view>
+</van-panel>
+</block>

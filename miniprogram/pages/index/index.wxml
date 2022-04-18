@@ -1,0 +1,56 @@
+<!--index.wxml-->
+<!-- 登录界面 -->
+<form bindsubmit="onSubmit">
+  <van-row>
+    <van-col offset="6" span="12">请使用学/教工号登录</van-col>
+  </van-row>
+
+  <!-- 学/教工号文字框 -->
+  <van-row>
+    <van-col span="6">
+      <label>学/教工号</label>
+    </van-col>
+    <van-col span="18">
+      <input name="ID" placeholder="请输入学/教工号"></input>
+    </van-col>
+  </van-row>
+
+
+  <!-- 学/教工号文字框 -->
+  <van-row>
+    <van-col span="6">
+      <label>登录密码</label>
+    </van-col>
+    <van-col span="18">
+      <input name="password" password placeholder="请输入登录密码"></input>
+    </van-col>
+  </van-row>
+
+
+  <!-- 第二行 -->
+  <van-row>
+    <van-col span="6">
+      <label>您的身份</label>
+    </van-col>
+    <van-col span="18">
+      <radio-group name="identity">
+        <radio color="#DE6E6D" value="1" />管理员
+        <view>    </view>
+        <radio color="#DE6E6D" value="2" />教师
+        <radio color="#DE6E6D" value="3" />学生
+      </radio-group>
+    </van-col>
+  </van-row>
+
+
+  <!-- 登录 -->
+  <van-row>
+    <van-col span="18" offset="3">
+      <button form-type="submit">登录系统</button>
+    </van-col>
+    <van-col span="18" offset="3">
+      <button bindtap="cancelEdit">取消修改</button>
+    </van-col>
+  </van-row>
+
+</form>

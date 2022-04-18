@@ -1,0 +1,28 @@
+<!--pages/adminiindex/adminiindex.wxml-->
+<van-row>
+    <van-col span="18" offset="3">
+      <button bindtap="toAdminiChaLog">添加管理员ID及密码信息</button>
+    </van-col>
+    <van-col span="18" offset="3">
+      <button bindtap="toChaAdminiPsw">重新设置管理员密码</button>
+    </van-col>
+    <van-col span="18" offset="3">
+      <button bindtap="toAddTeaMsg">新增教师数据信息</button>
+    </van-col>
+    <van-col span="18" offset="3">
+      <button bindtap="toChcOrModTeaMsg">查看和修改教师数据信息</button>
+    </van-col>
+    <van-col span="18" offset="3">
+      <button bindtap="toAddStuMsg">新增学生数据信息</button>
+    </van-col>
+    <van-col span="18" offset="3">
+      <button bindtap="toChcOrModStuMsg">查看和修改学生数据信息</button>
+    </van-col>
+    <van-col span="18" offset="3">
+      <button bindtap="toAddCourseSelectInfo">添加选课信息</button>
+    </van-col>
+    <van-col span="18" offset="3">
+      <button bindtap="toChcOrModCourseSelectInfo">查看和修改选课信息</button>
+    </van-col>
+  </van-row>
+

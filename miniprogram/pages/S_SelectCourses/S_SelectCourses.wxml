@@ -1,0 +1,82 @@
+<!--pages/S_SelectCourses/S_SelectCourses.wxml-->
+<form bindsubmit="onSubmit">
+  <!-- 学生姓名 -->
+  <van-row>
+    <van-col span="6">
+      <label>学生姓名</label>
+    </van-col>
+    <van-col span="18">
+      <view>{{studentinfo.name}}</view>
+    </van-col>
+  </van-row>
+
+
+  <!-- 学生学号 -->
+  <van-row>
+    <van-col span="6">
+      <label>学生学号</label>
+    </van-col>
+    <van-col span="18">
+      <view>{{studentinfo.SID}}</view>
+    </van-col>
+  </van-row>
+
+  <!-- 课程名 -->
+  <van-row>
+    <van-col span="6">
+      <label>课程名</label>
+    </van-col>
+    <van-col span="18">
+      <picker name = 'coursename' mode='selector' range='{{coursenameinfo}}' bindchange='onChange' >
+        <view>当前课程选择 ：{{coursename}}</view>
+      </picker>
+    </van-col>
+  </van-row>
+
+  <!-- 课程学分 -->
+  <van-row>
+    <van-col span="6">
+      <label>课程学分</label>
+    </van-col>
+    <van-col span="18">
+      <view>{{courseinfo.credit}}</view>
+    </van-col>
+  </van-row>
+
+  <!-- 课程学时 -->
+  <van-row>
+    <van-col span="6">
+      <label>课程学分</label>
+    </van-col>
+    <van-col span="18">
+      <view>{{courseinfo.hour}}</view>
+    </van-col>
+  </van-row>
+
+  <!-- 课程教师 -->
+  <van-row>
+    <van-col span="6">
+      <label>课程教师</label>
+    </van-col>
+    <van-col span="18">
+      <picker name = 'teacher' mode='selector' range='{{courseinfo.teachers}}' bindchange='onChange_1' >
+        <view>当前课程教师选择 ：{{teacher}}</view>
+      </picker>
+    </van-col>
+  </van-row>
+
+  <!-- 第六行 -->
+  <van-row>
+    <view>
+    <van-col span="21" offset="1.5">
+      <button form-type="submit">保存选课信息</button>
+    </van-col>
+  </view>
+    <van-col span="18" offset="3">
+      <button bindtap="cancelEdit">取消修改</button>
+    </van-col>
+  </van-row>
+
+
+</form>
+<button size="small"  bindtap="toReturnIndex">返回学生主页</button>

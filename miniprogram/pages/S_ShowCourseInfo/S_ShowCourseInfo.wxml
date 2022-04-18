@@ -1,0 +1,17 @@
+<!--pages/S_ShowCourseInfo/S_ShowCourseInfo.wxml-->
+<button size="small"  bindtap="toReturnIndex">返回学生主页</button>
+<van-cell title="已选课程的学分总和" value="{{TotalCredit}}" />
+<van-cell  value="                    " />
+<block wx:for='{{coursesinfo}}' wx:key='{{item.coursename}}'>
+  
+  <van-cell-group>
+  <van-cell title="课程名称" value="{{item.coursename}}" />
+  <van-cell title="课程成绩信息如下"  />
+  
+  <van-cell title="学分" value="{{item.credit}}" />
+  <van-cell title="成绩" value="{{item.grade}}" />
+  <van-cell  value="                    " />
+  
+</van-cell-group>
+
+</block>

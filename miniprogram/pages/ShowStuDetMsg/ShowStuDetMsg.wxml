@@ -1,0 +1,19 @@
+<!--pages/ShowStuDetMsg/ShowStuDetMsg.wxml-->
+<!-- 顶部头像和昵称 -->
+<view class="avatarBox">
+  <image src="/images/avatar/00{{info.gender}}.jpg"></image>
+  <view>{{info.name}}</view>
+</view>
+<van-cell-group>
+  <van-cell title="性别" value="{{info.gender == 3 ? '男' :'女'}}" />
+  <van-cell title="学院" value="{{info.academy}}" />
+  <van-cell title="学号" value="{{info.SID}}" />
+  <van-cell title="专业" value="{{info.major}}" />
+  <van-cell title="班级" value="{{info.class}}" />
+  <van-cell title="入学年份" value="{{info.time}}" />
+  <van-cell title="登录密码" value="{{info.SPasW}}" />
+</van-cell-group>
+
+<!-- 按钮区域 -->
+<button block  bindtap="editStudent">修改</button>
+<button block  bindtap="deleteStudent">删除</button>

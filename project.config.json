@@ -1,0 +1,201 @@
+{
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "lazyloadPlaceholderEnable": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "useIsolateContext": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true,
+    "disableUseStrict": false,
+    "minifyWXML": true,
+    "showES6CompileOption": false,
+    "useCompilerPlugins": false,
+    "ignoreUploadUnusedFiles": true
+  },
+  "appid": "wx9d855fd3b969c24a",
+  "projectname": "InfManSys%20For%20Teas%20And%20Stus",
+  "libVersion": "2.14.1",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+  "condition": {
+    "search": {
+      "list": []
+    },
+    "conversation": {
+      "list": []
+    },
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "adminiindex",
+          "pathName": "pages/adminiindex/adminiindex",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "adminichalog",
+          "pathName": "pages/adminichalog/adminichalog",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "ChaAdminiPsw",
+          "pathName": "pages/ChaAdminiPsw/ChaAdminiPsw",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 4,
+          "name": "AddTeaMsg",
+          "pathName": "pages/AddTeaMsg/AddTeaMsg",
+          "query": "id=d52d5a735fb0e9ec00a81b8d7d4bc5c9",
+          "scene": null
+        },
+        {
+          "id": 5,
+          "name": "AddTeaCouMsg",
+          "pathName": "pages/AddTeaCouMsg/AddTeaCouMsg",
+          "query": "id=d52d5a735fb0e9ec00a81b8d7d4bc5c9&i=0",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "ShowTeaMsg",
+          "pathName": "pages/ShowTeaMsg/ShowTeaMsg",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 7,
+          "name": "ShowTeaDetMsg",
+          "pathName": "pages/ShowTeaDetMsg/ShowTeaDetMsg",
+          "query": "id=dd8d23355fb0da6d00a5abcd54d09fa3",
+          "scene": null
+        },
+        {
+          "id": 8,
+          "name": "ChaTeaDetMsg",
+          "pathName": "pages/ChaTeaDetMsg/ChaTeaDetMsg",
+          "query": "id=d52d5a735fb0e9ec00a81b8d7d4bc5c9",
+          "scene": null
+        },
+        {
+          "id": 9,
+          "name": "ChaTeaCouMsg",
+          "pathName": "pages/ChaTeaCouMsg/ChaTeaCouMsg",
+          "query": "id=d52d5a735fb0e9ec00a81b8d7d4bc5c9&i=0",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/AddStuMsg/AddStuMsg",
+          "pathName": "pages/AddStuMsg/AddStuMsg",
+          "query": "id=new",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/ShowStuMsg/ShowStuMsg",
+          "pathName": "pages/ShowStuMsg/ShowStuMsg",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/CourseSelectOper/CourseSelectOper",
+          "pathName": "pages/CourseSelectOper/CourseSelectOper",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/ShowCourseInfo/ShowCourseInfo",
+          "pathName": "pages/ShowCourseInfo/ShowCourseInfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 14,
+          "name": "pages/S_SelectCourses/S_SelectCourses",
+          "pathName": "pages/S_SelectCourses/S_SelectCourses",
+          "query": "id=b00064a7600be1fa009e316045394ff1",
+          "scene": null
+        },
+        {
+          "id": 15,
+          "name": "pages/S_RetreatCourses/S_RetreatCourses",
+          "pathName": "pages/S_RetreatCourses/S_RetreatCourses",
+          "query": "id=1526e12a600e51fb00acaade6e5139fe",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/S_ShowCourseInfo/S_ShowCourseInfo",
+          "pathName": "pages/S_ShowCourseInfo/S_ShowCourseInfo",
+          "query": "id=1526e12a600e51fb00acaade6e5139fe",
+          "scene": null
+        },
+        {
+          "id": 17,
+          "name": "pages/T_teaindex/T_teaindex",
+          "pathName": "pages/T_teaindex/T_teaindex",
+          "query": "id=dd8d23355fb0da6d00a5abcd54d09fa3",
+          "scene": null
+        },
+        {
+          "id": 18,
+          "name": "pages/T_ToCheckInGrade/T_ToCheckInGrade",
+          "pathName": "pages/T_ToCheckInGrade/T_ToCheckInGrade",
+          "query": "i=0&coursename=高等数学&teacher=李升",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

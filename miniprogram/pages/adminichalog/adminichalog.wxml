@@ -1,0 +1,38 @@
+<!--pages/adminichalog/adminichalog.wxml-->
+<!-- 登录界面 -->
+<form bindsubmit="onSubmit">
+  <van-row>
+    <van-col offset="6" span="12">添加管理员ID及密码</van-col>
+  </van-row>
+
+  <!-- 学/教工号文字框 -->
+  <van-row>
+    <van-col span="6">
+      <label>管理员ID</label>
+    </van-col>
+    <van-col span="18">
+      <input name="adminiID" placeholder="请输入管理员ID"></input>
+    </van-col>
+  </van-row>
+
+
+  <!-- 学/教工号文字框 -->
+  <van-row>
+    <van-col span="6">
+      <label>管理员密码</label>
+    </van-col>
+    <van-col span="18">
+      <input name="adminiPassword" password placeholder="请输入登录密码"></input>
+    </van-col>
+  </van-row>
+
+  <van-row>
+    <van-col span="18" offset="3">
+      <button form-type="submit">添加管理员ID及密码</button>
+    </van-col>
+    <van-col span="18" offset="3">
+      <button bindtap="cancelEdit">取消修改</button>
+    </van-col>
+  </van-row>
+
+</form>

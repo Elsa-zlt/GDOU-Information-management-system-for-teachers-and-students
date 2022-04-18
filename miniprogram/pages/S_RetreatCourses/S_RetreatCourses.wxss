@@ -1,0 +1,17 @@
+/* pages/S_RetreatCourses/S_RetreatCourses.wxss */
+view{
+  /* 文本居中显示 */
+  text-align:center;
+  /* 颜色 */
+  color: #DE6E6D;
+}
+
+button{
+  margin: 20rpx;
+  color: white;
+  background-color: #DE6E6D;
+}
+
+.title{
+  size: 40px;
+}

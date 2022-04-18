@@ -1,0 +1,16 @@
+<!--pages/ShowCourseInfo/ShowCourseInfo.wxml-->
+<!-- 搜索框 -->
+<van-search placeholder="请输入搜索关键词搜索课程名" show-action bind:search="onSearch" bind:cancel="onCancel" />
+
+<block wx:for='{{coursesList}}' wx:key='{{item._id}}'>
+  <van-panel class="title" title="{{item.coursename}}" desc="课程信息如下" use-footer-slot>
+  <view>学分：{{item.credit}}</view>
+  <view>学时：{{item.hour}}</view>
+  <view>教师1：{{item.teachers[0]}}</view>
+  <view>教师2：{{item.teachers[1]}}</view>
+  <view>教师3：{{item.teachers[2]}}</view>
+  <view slot="footer">
+    <button size="small" data-index="{{item._id}}" bindtap="toChaCourseInfo">修改课程信息</button>
+  </view>
+</van-panel>
+</block>

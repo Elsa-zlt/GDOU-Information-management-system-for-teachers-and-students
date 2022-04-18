@@ -1,0 +1,83 @@
+<!--pages/CourseSelectOper/CourseSelectOper.wxml-->
+<form bindsubmit="onSubmit">
+  <!-- 课程名添加 -->
+  <van-row>
+    <van-col span="6">
+      <label>课程名</label>
+    </van-col>
+    <van-col span="18">
+      <input name="coursename" placeholder="请输入课程名" ></input>
+    </van-col>
+  </van-row>
+
+
+  <!-- 学分添加 -->
+  <van-row>
+    <van-col span="6">
+      <label>学分</label>
+    </van-col>
+    <van-col span="18">
+      <input name="credit" placeholder="请输入该课程学分" ></input>
+    </van-col>
+  </van-row>
+
+  <!-- 课时添加 -->
+  <van-row>
+    <van-col span="6">
+      <label>课时</label>
+    </van-col>
+    <van-col span="18">
+      <input name="hour" placeholder="请输入该课程课时" ></input>
+    </van-col>
+  </van-row>
+
+  <!-- 授课教师1添加 -->
+  <van-row>
+    <van-col span="6">
+      <label>教师1</label>
+    </van-col>
+    <van-col span="18">
+      <picker name = 'teacher1' mode='selector' range='{{tname}}' bindchange='onChange1' >
+        <view>当前教师选择 ：{{tname1}}</view>
+      </picker>
+    </van-col>
+  </van-row>
+
+  <!-- 授课教师2添加 -->
+  <van-row>
+    <van-col span="6">
+      <label>教师2</label>
+    </van-col>
+    <van-col span="18">
+      <picker name = 'teacher2' mode='selector' range='{{tname}}' bindchange='onChange2' >
+        <view>当前教师选择 ：{{tname2}}</view>
+      </picker>
+    </van-col>
+  </van-row>
+
+  <!-- 授课教师3添加 -->
+  <van-row>
+    <van-col span="6">
+      <label>教师3</label>
+    </van-col>
+    <van-col span="18">
+      <picker name = 'teacher3' mode='selector' range='{{tname}}' bindchange='onChange3' >
+        <view>当前教师选择 ：{{tname3}}</view>
+      </picker>
+    </van-col>
+  </van-row>
+
+  <!-- 第六行 -->
+  <van-row>
+    <view>
+    <van-col span="21" offset="1.5">
+      <button form-type="submit">保存选课信息</button>
+    </van-col>
+  </view>
+    <van-col span="18" offset="3">
+      <button bindtap="cancelEdit">取消修改</button>
+    </van-col>
+  </van-row>
+
+
+</form>
